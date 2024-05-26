@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 import numpy as np
 # own libraries
-from configs.config import *
+#from configs.config import * # TODO: refactor to new paths and structure
 
 ########################################################################
 # DEFINE FUNCTIONS PERFORMANCE EVALUATION                              #

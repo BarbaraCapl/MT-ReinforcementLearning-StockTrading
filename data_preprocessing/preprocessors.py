@@ -1,14 +1,16 @@
 from stockstats import StockDataFrame
 # own libraries:
-from pipeline.setup_functions import *
+#import os
+#os.chdir(os.path.join(__file__, "../"))
+import logging
+#from modeling_pipeline.setup_functions import * TODO: refactor
 
 ############################
 ##   SINGLE FUNCTIONS   ##
 ############################
 
-
 def calculate_price_volume_WhartonData(df,
-                                       new_cols_subset=data_settings.NEW_COLS_SUBSET, # todo: rm
+                                       new_cols_subset=None,#data_settings.NEW_COLS_SUBSET, # TODO: refactor 
                                        target_subset=None,
                                        ):
     """
